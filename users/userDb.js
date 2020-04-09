@@ -16,7 +16,8 @@ function get() {
 function getById(id) {
   return db('users')
     .where({ id })
-    .first();
+    .first(); // if you see this its going to be an object if you dont see it its prolly and array
+    
 }
 
 function getUserPosts(userId) {
